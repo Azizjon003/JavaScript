@@ -1,0 +1,10 @@
+let yosh = Number(prompt("yoshingizni sonda kiriting"));
+let kun = yosh * 365;
+console.log(kun + "kun");
+let soat = kun * 24;
+console.log(soat + "soat");
+let minut = soat * 60;
+console.log(minut + "minut");
+let sekund = minut * 60;
+console.log(sekund + "sekund");
+alert(` siz ${kun}lik bolibsiz`);
