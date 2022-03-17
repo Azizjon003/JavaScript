@@ -473,6 +473,280 @@
 //       }
 //     }
 //   }
-//   return sana;
+// //   return sana;
+// // }
+// // // console.log(check("ooo???xxxx"));
+// let arr = [1, 2, 3, 4, "a1", 1, 5, 4];
+// // const mySet = new Set("salom");
+// // for (let el of mySet) {
+// //   console.log(el);
+// // }
+// // console.log((arr = [...mySet]));
+
+// let myMap = new Map([
+//   ["joraqozi", 23],
+//   ["ravshan", 25],
+//   ["aziz", 20],
+// ]);
+// let obj = {
+//   name: "azizjon",
+//   age: 23,
+//   status: "student",
+// };
+// // for (let [key, value] of myMap) {
+// //   console.log(`${key} ==> ${value}`);
+// // }
+// let myMap1 = new Map(Object.entries(obj));
+// arr = [...myMap];
+// console.log(arr);
+// function solve(arr) {
+//   let arr1 = [];
+//   let sana = 0;
+//   for (let i = 0; i < arr[0] + arr[1] + arr[2]; i++) {
+//     i;
+//   }
+//   console.log(sana);
 // }
-// console.log(check("ooo???xxxx"));
+// solve([1, 2, 1]);
+// let add = function (a, func) {
+//   return a * func;
+// };
+// function salom(a, b) {
+//   return a + b;
+// }
+
+// console.log(add(9, salom(10, 5)));
+// function func() {
+//   let sana = 0;
+//   return function () {
+//     return sana++;
+//   };
+// }
+// let sana1 = func();
+// console.log(sana1());
+
+// let str = prompt("gapni kirting:");
+// let son = Number(prompt("sonini kirit"));
+// function kattaHarf(suz) {
+//   let suz1 = suz.toUpperCase();
+//   console.log(suz1);
+// }
+// function kichikHarf(suz) {
+//   let suz1 = suz.toLowerCase();
+//   console.log(suz1);
+// }
+// function boshHarfi(suz) {
+//   let arr = suz.split(" ");
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i][0].toUpperCase() + arr[i].substr(1).toLowerCase();
+//   }
+//   let suz1 = arr.join(" ");
+//   console.log(suz1);
+// }
+// function camelCase(suz) {
+//   let arr = suz.split(" ");
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i][0].toUpperCase() + arr[i].substr(1).toLowerCase();
+//   }
+//   let suz1 = arr.join("");
+//   console.log(suz1.replace(`${suz1[0]}`, `${suz1[0].toLowerCase()}`));
+// }
+// let yoz = function (yoz, son) {
+//   switch (son) {
+//     case 1:
+//       kattaHarf(yoz);
+//       break;
+//   }
+// };
+// // yoz(str, son);
+// function ismi(ism) {
+//   return function (qayerdan) {
+//     return function (age) {
+//       return function (yili) {
+//         console.log(`${ism} ${qayerdan} ${age} ${yili}`);
+//       };
+//     };
+//   };
+// }
+// let b = ismi("Javlon");
+// b("Navoiy");
+// let age = b("Navoiy");
+// age(23);
+// let yili = age(23);
+// yili(1999);
+
+// universT.davomat(100, 10);
+// let davomatUnivers = universT.davomat;
+// const universTS = {
+//   name: "TATU Samarqand",
+//   location: "Samarqand",
+//   fakultet: "Kampyuter injiniring",
+// };
+// davomatUnivers.call(universTS, 200, 156);
+// const universTN = {
+//   name: "TATU Navoiy",
+//   location: "Navoiy",
+//   fakultet: "Kampyuter injiniring",
+// };
+// const arr = [300, 189];
+// davomatUnivers.apply(universTN, arr);
+
+// const phones = {
+//   name: "phones",
+//   location: "Navoiy ",
+//   telefon(modeli, nomi, narxi) {
+//     console.log(
+//       `${nomi} shu telefonni ${narxi} ga oldingiz.Modeli ${modeli} ???${this.name} ${this.location}`
+//     );
+//   },
+// };
+// let newPhones = phones.telefon;
+// const buxPhones = {
+//   name: "buxPhones",
+//   location: "Buxoro",
+// };
+
+// let newTelefon = newPhones.bind(buxPhones, "Iphone");
+// newTelefon("12 Pro Max", 200);
+// newTelefon("13 Pro Max", 300);
+// newTelefon("14 Pro Max", 500);
+// const universT = {
+//   name: "TATU",
+//   location: "Toshkent",
+//   fakultet: "Kampyuter injiniring",
+//   arrDavomat: [],
+//   davomat(toliq, kelgani) {
+//     console.log(
+//       `Bugun ${this.name} universitetining ${this.fakultet} da ${toliq} bolish kerak. ${kelgani} qatnashdi`
+//     );
+//   },
+// };
+// universT.sana = 100;
+// universT.davomat(200, 100);
+// universT.sotilganlar = function () {
+//   console.log(++this.sana);
+// };
+
+// let sotilganlar1 = universT.sotilganlar.bind(universT);
+// document.querySelector(".btn").addEventListener("click", sotilganlar1);
+// function solve(arr) {
+// let max = 0;
+// let result;
+// for (let i = 0; i < 3; i++) {
+//   sum += arr[i];
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// if (max > sum - max) {
+//   result = sum - max;
+// } else {
+//   result = Math.trunc(sum / 2);
+// }
+// return result;
+
+// document.querySelector(".btn").addEventListener("click", () => {
+//   document.querySelector(".circle").textContent++;
+//   window.localStorage.setItem(
+//     "todo",
+//     document.querySelector(".circle").textContent
+//   );
+// });
+
+// document.querySelector(".circle").textContent =
+//   window.localStorage.getItem("todo");func
+// let f;
+// function func() {
+//   let b = 10;
+//   f = function (a) {
+//     return a * b;
+//   };
+// }
+
+// func();
+// console.log(f(20));
+// let arr = [1, 10, 100, [1000, 10001], 10000, 100000];
+// arr.forEach((val, key) => {
+//   if (typeof val == "object") {
+//     val.forEach((val, key) => {
+//       console.log(`${key + 3} ==> ${val}`);
+//     });
+//     val = 0;
+//   }
+//   console.log(`${key} ==> ${val}`);
+// });
+let cashMe = {
+  name: "azizjon",
+  balance: 1000,
+  utkazma: [],
+  pin: 1111,
+};
+let cashYou = new Map([
+  ["name", "Juraquzi"],
+  ["balance", 2000],
+  ["pin:", 2222],
+]);
+
+// let otkazmalar = function (jonatuvchi, qabulqiluvchi, pull) {
+//   let pinKod = Number(prompt("parolni kirit"));
+//   if (pinKod === junatuvchi.pin) {
+//     let junatma = Number(prompt("qaysi biriga pul junatmoqchisiz v  "));
+//   } else {for
+//     console.log("Parol  xato");
+//   }
+// };
+
+let dollar = [50, 200, 35, 3600];
+// let aylantir = String.entries(str);
+// str.forEach((val, key) => {
+//   console.log(`${key}  ==>  ${val} `);
+// });
+// let sumToUsz = 10957;
+// let x = dollar.map((value) => {
+//   return value * sumToUsz;
+// });
+// let y = dollar.filter((value) => {
+//   return value >= 200;
+// });
+// // let z = console.log(y);
+// function solve(arr) {
+//   let max = 0;
+//   let result;
+//   let sum = 0;
+//   for (let i = 0; i < 3; i++) {
+//     sum = sum + arr[i];
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   if (max > sum - max) {
+//     result = sum - max;
+//   } else {
+//     result = Math.trunc(sum / 2);
+//   }
+//   return result;
+// }
+// console.log(solve([16, 3, 43]));
+function findOutlier(integers) {
+  let sana = 0;
+  let sana1 = 0;
+  let sana1Arr = 0;
+  let sana1Arr1 = 0;
+  for (let i = 0; i < integers.length; i++) {
+    if (integers[i] % 2 == 0) {
+      sana++;
+      sana1Arr = integers[i];
+    }
+    if (integers[i] % 2 !== 0) {
+      sana1++;
+      sana1Arr1 = integers[i];
+    }
+  }
+  if (sana == 1) {
+    return sana1Arr;
+  }
+  if (sana1 == 1) {
+    return sana1Arr1;
+  }
+}
+console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]));
