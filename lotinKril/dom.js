@@ -13,3 +13,15 @@ console.log(ClassName);
 // bunda id orqali chaquirishim mumkun
 let getId = document.getElementById("salom");
 console.log(getId);
+//
+let box = document.createElement("button");
+let header = document.querySelector("#salom");
+box.classList.add("salom-dunyo", "salom");
+// box.classList.remove("salom");
+// box.classList.toggle("salom-dunyo");
+// box.classList.contains("salom");
+
+box.innerHTML = `<p> salom dunyo </p>`;
+
+header.after(box.cloneNode(true));
+header.before(box.cloneNode(true));
