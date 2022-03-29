@@ -6,6 +6,7 @@
 let trn = navigator.language;
 console.log(trn);
 let sana = new Date();
+console.log(sana);
 let Options = {
   day: `numeric`,
   month: "numeric",
@@ -14,8 +15,9 @@ let Options = {
   hour: "numeric",
   minute: "numeric",
 };
-let formatUzb = new Intl.DateTimeFormat(trn, Options).format(sana);
+let formatUzb = new Intl.DateTimeFormat(trn, Options).format( );
 
+console.log(formatUzb);
 // Data
 const account1 = {
   owner: "Jonas Schmedtmann",
